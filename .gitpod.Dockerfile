@@ -4,7 +4,7 @@ FROM gitpod/workspace-full:latest
 USER root
 
 # Install Chromium
-RUN apt-get update && apt-get install -y --no-install-recommends chromium-browser chromium-browser-l10n chromium-codecs-ffmpeg \
+RUN apt-get update && apt-get install -y --no-install-recommends chromium \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
